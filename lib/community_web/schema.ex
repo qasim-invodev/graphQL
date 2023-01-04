@@ -15,7 +15,7 @@ defmodule CommunityWeb.Schema do
       arg :url, non_null(:string)
       arg :description, non_null(:string)
 
-      resolve &NewsResolver.create_link/3
+      resolve(&NewsResolver.create_link/3)
     end
   end
 
